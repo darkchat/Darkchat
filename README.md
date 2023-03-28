@@ -1,6 +1,7 @@
 ### Hi there 👋
 
 How To Use
+
 1. Download The Server
 
 Once you download the server, share your port number with your friend. Once they have downloaded the client, and you also must download the client, that is the only way you can chat. Add the port number of your server in the client; once you download the server, the port number will show up as soon as you open the download. Once you download the server, you control everything, and you can chat just like a hacker does.
