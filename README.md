@@ -1,4 +1,6 @@
 ### Hi there 👋
+I'm Brian Wesson im the creator of Dark Chat i did the entire thing in JS
+
 
 How To Use
 
