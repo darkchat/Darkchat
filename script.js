@@ -1,3 +1,5 @@
+// start the animation
+animate();
 // get the counter element
 const counter = document.querySelector('.count');
 
@@ -5,8 +7,16 @@ const counter = document.querySelector('.count');
 const targetValue = 1000000000;
 const animationSpeed = 300;
 
-// set the starting value of the counter
-let currentValue = 9113;
+// check if the current value is stored in local storage
+let currentValue = localStorage.getItem('counterValue');
+
+// if the current value is not stored, set it to 0
+if (!currentValue) {
+  currentValue = 9113;
+}
+
+// update the counter value
+counter.innerHTML = currentValue;
 
 // create the animation function
 function animate() {
@@ -15,6 +25,9 @@ function animate() {
 
   // update the counter value
   counter.innerHTML = currentValue;
+
+  // store the current value in local storage
+  localStorage.setItem('counterValue', currentValue);
 
   // check if the animation is finished
   if (currentValue < targetValue) {
