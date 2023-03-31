@@ -3,7 +3,7 @@ const counter = document.querySelector('.count');
 
 // set the starting value and the speed of the animation
 const targetValue = 1000000000;
-const animationSpeed = 100;
+const animationSpeed = 200;
 
 // check if the page views counter is stored in local storage
 let pageViews = localStorage.getItem('pageViews');
