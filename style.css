@@ -78,16 +78,6 @@
     background-position: center;
   }
   
-  .windows {
-    background-image: url('windows-icon.png');
-  }
-  
-  .macos {
-    background-image: url('macos-icon.png');
-  }
-  .linux{
-    background-image: url('linux-icon.png');
-  }
   
   .download-info {
     margin-top: 20px;
