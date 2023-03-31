@@ -1,36 +1,35 @@
-// start the animation
-animate();
 // get the counter element
 const counter = document.querySelector('.count');
 
 // set the starting value and the speed of the animation
 const targetValue = 1000000000;
-const animationSpeed = 300;
+const animationSpeed = 100;
 
-// check if the current value is stored in local storage
-let currentValue = localStorage.getItem('counterValue');
+// check if the page views counter is stored in local storage
+let pageViews = localStorage.getItem('pageViews');
 
-// if the current value is not stored, set it to 0
-if (!currentValue) {
-  currentValue = 9113;
+// if the page views counter is not stored, set it to 0 and increment it
+if (!pageViews) {
+  pageViews = 0;
+  localStorage.setItem('pageViews', ++pageViews);
 }
 
-// update the counter value
-counter.innerHTML = currentValue;
+// display the page views counter value
+counter.innerHTML = pageViews;
 
 // create the animation function
 function animate() {
   // increment the current value by 1
-  currentValue++;
+  pageViews++;
 
   // update the counter value
-  counter.innerHTML = currentValue;
+  counter.innerHTML = pageViews;
 
   // store the current value in local storage
-  localStorage.setItem('counterValue', currentValue);
+  localStorage.setItem('pageViews', pageViews);
 
   // check if the animation is finished
-  if (currentValue < targetValue) {
+  if (pageViews < targetValue) {
     // continue the animation
     setTimeout(animate, animationSpeed);
   }
